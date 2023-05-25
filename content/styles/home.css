@@ -1,0 +1,255 @@
+:root {
+    --primary-color: #043873;
+    --login-btn-bg-color: #FFE492;
+    --try-btn-bg-color: #4F9CF9;
+}
+
+button {
+    cursor: pointer;
+}
+
+.burguer {
+    display: none;
+}
+
+.header-class {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 5.5rem;
+    
+}
+
+.header-list {
+    display: flex;
+    list-style: none;
+}
+
+.header-list li{
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    margin-right: 2rem;
+    color: white;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.header-list li h4{
+    margin-right: 0.8rem;
+}
+
+.btns-header button:first-child {
+    height: 3rem;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    margin-right: 1.2rem;
+    width: 5.5rem;
+    background-color: var(--login-btn-bg-color);
+    color: var(--primary-color);
+}
+
+.try-btn {
+    height: 3rem;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    width: 13rem;
+    background-color: var(--try-btn-bg-color);
+    color: white;
+}
+
+.try-btn img {
+    margin-bottom: -0.1rem;
+    margin-left: 0.5rem;
+}
+
+.hero-section {
+    background-color: var(--primary-color);
+    background-image: url(./content/imgs/Element.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;;
+    color: white;
+    
+}
+
+.text-container {
+    font-family: 'Inter', sans-serif;
+}
+
+.text-container h1{
+    margin-bottom: 1.25rem;
+    font-size: 3rem;
+}
+
+.text-container h4{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.text-container p{
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-bottom: 3.75rem;
+    width: 40rem;
+}
+
+.hero-section .text-container{
+    text-align: left;
+    margin-bottom: 3.75rem;
+    margin-top: 20rem;
+    margin-left: 10rem
+}
+
+.hero-section button {
+    margin-left: 10rem
+}
+
+.desc-content {
+    height: 70rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8rem;
+}
+
+.desc-section .text-container {
+    position: relative;
+    width: 50%;
+    margin-left: 7rem;
+}
+
+.desc-section .text-container h1 {
+    position: relative;
+    z-index: 2;
+}
+
+.desc-section .try-btn {
+    height: 3.7rem;
+    width: 10rem;
+}
+
+.text-container .underline {
+    position: absolute;
+    top: 2rem;
+    right: 10rem;
+    z-index: 1;
+}
+
+.desc-section .work-img{
+    height: 30rem;
+    width: 30rem;
+}
+
+.footer-class {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 4.5rem;  
+}
+
+.footer-list {
+    display: flex;
+    list-style: none;
+}
+
+.footer-list li{
+    display: flex;
+    flex-direction: row;
+    margin-right: 2rem;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 100 !important;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-class .footer-list:first-child li{
+    margin-right: 5rem;
+}
+
+.footer-list li h4{
+    margin-right: 0.8rem;
+}
+
+@media (min-width: 0px) and (max-width: 778px) {
+    .header-logo {
+        width: 10rem;
+
+    }
+
+    .burguer {
+        display: block;
+    }
+
+    .header-list li{
+        display: flex;
+        display: none;
+    }
+
+    .header-class img{
+        display: flex;
+        align-items: left;
+
+        
+    }
+
+    .btns-header{
+        display: flex;
+        display: none;     
+    }
+
+    .hero-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-section .text-container {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-section .text-container {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-container h1 {
+        font-size: 3rem;
+    }
+
+    .text-container h4 {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .hero-section .try-btn {
+        margin: 5rem 0rem 0rem 0rem;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+        width: 15rem;
+    }
+}
