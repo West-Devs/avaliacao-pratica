@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #043873;
+    --login-btn-bg-color: #FFE492;
+    --try-btn-bg-color: #4F9CF9;
+}
+
+.home-section {
+    background-color: var(--primary-color);
+    background-image: url(/content/img/Element.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;;
+    color: white;
+    
+}
+
+.text-container {
+    font-family: 'Inter', sans-serif;
+}
+
+.text-container h1{
+    margin-bottom: 1.25rem;
+    font-size: 4rem;
+}
+
+.text-container h4{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.text-container p{
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-bottom: 3.75rem;
+    width: 50rem;
+}
+
+.home-section .text-container{
+    text-align: left;
+    margin-bottom: 3.75rem;
+    margin-top: 20rem;
+    margin-left: 10rem
+}
+
+.home-section button {
+    margin-left: 10rem;
+    height: 3.7rem;
+    width: 10rem;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color: var(--try-btn-bg-color);
+}
